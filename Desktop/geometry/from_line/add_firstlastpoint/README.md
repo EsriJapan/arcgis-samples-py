@@ -3,7 +3,7 @@
 ライン データの始点/終点にポイントを発生させるサンプル
   
   
-<img src="..\..\..\..\_images/addfisrtlastPoint.png" width="500">
+<img src="..\..\..\..\_images\addfisrtlastPoint.png" width="500">
 
 ## 使用している製品
 

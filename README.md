@@ -18,7 +18,7 @@ ArcPy サイト パッケージのサンプル集です。ArcMap 用と ArcGIS P
 * ポリゴンの枠線をラインとして出力 ([ArcMap](./ArcMap/geometry/from_polygon/polygon_to_line) / [Pro](./Pro/geometry/from_polygon/polygon_to_line))
 * 現在の表示範囲にあるフィーチャを選択 ([ArcMap](./Desktop/mapping/select_by_extent))
 * ポリゴンから内向きバッファ ポリゴンを発生 ([ArcMap](./Desktop/geometry/from_polygon/create_inside_buffer) / [Pro](./Pro/geometry/from_polygon/create_inside_buffer))
-* フィーチャ サービス/フィーチャクラスから添付ファイルを一括でエクスポート ([Pro](./Pro\data_source\export_attachments))
+* フィーチャ サービス/フィーチャクラスから添付ファイルを一括でエクスポート ([Pro](./Pro/data_source/export_attachments))
 
 ## リソース
 

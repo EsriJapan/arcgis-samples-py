@@ -13,7 +13,6 @@ import os
 import zipfile
 from datetime import datetime
 
-
 #------------------------------------------------------------------------------------
 # パラメーターの設定
 #------------------------------------------------------------------------------------
@@ -26,7 +25,6 @@ attachment_table = arcpy.GetParameterAsText(5)
 dtime = datetime.now().strftime("%Y%m%d%H%M%S")
 replica_name = "replica_%s" % (dtime)
 output_folder = os.path.join(arcpy.GetParameterAsText(6), replica_name)
-
 
 #------------------------------------------------------------------------------------
 # ArcGIS Online にアクセス
@@ -44,7 +42,6 @@ def SplitObjectIds(object_ids):
     sort_object_ids = sorted(object_ids)
     for i in range(0, len(sort_object_ids), n):
         yield sort_object_ids[i:i + n]
-
 
 #------------------------------------------------------------------------------------
 # レプリカを作成する際の条件式を作成
@@ -90,7 +87,6 @@ def CreateReplicaAndDownroad(feature_service_url, gis, replica_name, replica_lay
     else:
         arcpy.AddError("> 対象のフィーチャ サービスがレプリカの作成に対応していません。フィーチャ サービスの同期とエクスポート機能を有効化して再度試してください。")
 
-
 #------------------------------------------------------------------------------------
 # ダウンロードしたレプリカ (ZIP ファイル) からアタッチメント テーブルを取得
 #------------------------------------------------------------------------------------
@@ -107,7 +103,6 @@ def GetAttachmentTable(zip_files):
             for filename in filenames:
                 attachment_table = "%s__ATTACH" %(os.path.join(dirpath, filename))
                 yield attachment_table
-
 
 #------------------------------------------------------------------------------------
 # アタッチメントテーブルから添付ファイル抽出
@@ -153,7 +148,6 @@ def ExportAttachments(attachment_tables, dtime, output_folder):
                 arcpy.Delete_management(join_layer)
                 arcpy.Delete_management(input_table_view)
                 arcpy.Delete_management(join_feature_layer)
-
 
 #------------------------------------------------------------------------------------
 # メインの処理

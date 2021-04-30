@@ -18,7 +18,7 @@
 
 ## 内容
 
-[ArcGIS Pro](https://www.esrij.com/products/arcgis-desktop/) では、[アタッチメント](https://pro.arcgis.com/ja/pro-app/latest/help/editing/edit-file-attachments.htm) (添付ファイル: 画像、PDF、テキスト文書、その他すべての種類のファイル) を[フィーチャクラス](https://www.esrij.com/gis-guide/arcgis-basic/feature-featureclass/)の各フィーチャに追加することができ、またエクスポートしてローカルに保存することもできます。なお、UI 上ではエクスポートは 1 つのフィーチャに対してのみしか行うことができないため、本ツールでは [ArcPy](https://pro.arcgis.com/ja/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm) を使用してフィーチャクラスのすべてのフィーチャから添付ファイルを一括でエクスポートします。さらに、[ArcGIS REST API](https://developers.arcgis.com/rest/) を組み合わせて、[ArcGIS Online](https://www.esrij.com/products/arcgis-online/) に公開しているホスト フィーチャ サービスに対しても同様に、添付ファイルを一括でエクスポートします。
+[ArcMap](https://desktop.arcgis.com/ja/arcmap/) では、[アタッチメント](https://desktop.arcgis.com/ja/arcmap/latest/manage-data/editing-attributes/enabling-attachments-on-a-feature-class.htm) (添付ファイル: 画像、PDF、テキスト文書、その他すべての種類のファイル) を[フィーチャクラス](https://www.esrij.com/gis-guide/arcgis-basic/feature-featureclass/)の各フィーチャに追加することができ、またエクスポートしてローカルに保存することもできます。なお、UI 上ではエクスポートは 1 つのフィーチャに対してのみしか行うことができないため、本ツールでは [ArcPy](https://pro.arcgis.com/ja/pro-app/latest/arcpy/get-started/what-is-arcpy-.htm) を使用してフィーチャクラスのすべてのフィーチャから添付ファイルを一括でエクスポートします。さらに、[ArcGIS REST API](https://developers.arcgis.com/rest/) を組み合わせて、[ArcGIS Online](https://www.esrij.com/products/arcgis-online/) に公開しているホスト フィーチャ サービスに対しても同様に、添付ファイルを一括でエクスポートします。
 
 ## 使用手順
 * ArcGIS Online のフィーチャ サービスに対して処理を行う場合
